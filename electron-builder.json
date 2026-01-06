@@ -1,0 +1,36 @@
+{
+  "appId": "com.unt.sistema-reportes",
+  "productName": "App de ReportesV5",
+  "directories": {
+    "buildResources": "electron/build",
+    "output": "release"
+  },
+  "files": [
+    "electron/main.js",
+    "electron/preload.js",
+    "electron/splash.html",
+    "dist/frontend/browser/**/*"
+  ],
+  "extraResources": [
+     {
+      "from": "electron/resources/postgresql",
+      "to": "postgresql"
+    },
+    {
+      "from": "electron/resources/backend-win.exe",
+      "to": "."
+    }
+  ],
+  "asar": {
+    "smartUnpack": true
+  },
+  "win": {
+    "target": ["nsis"],
+    "icon": "electron/build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true
+  }
+}
