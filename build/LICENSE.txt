@@ -1,0 +1,5 @@
+Sistema de Reportes para el Area de Previos y Devengados
+Copyright © 2025 Universidad Nacional de Trujillo
+
+Este software es de uso interno en Contabilidad.
+Todos los derechos reservados.
